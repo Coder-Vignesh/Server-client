@@ -1,5 +1,5 @@
 import socket
-SERVER_IP ="192.168.1.15"
+SERVER_IP ="YOUR IP"
 SERVER_PORT =8080
 address =(SERVER_IP,SERVER_PORT)
 if __name__ =="__main__":
@@ -8,7 +8,7 @@ if __name__ =="__main__":
     sock.listen(5)
     print("[+]waiting ......")
     cli_sock,cli_addrsock = sock.accept()
-    msg ="HI I AM VIGNESH"
+    msg ="HI I AM SERVER"
     cli_sock.send(msg.encode())
     cli_sock.close()
     sock.close()
